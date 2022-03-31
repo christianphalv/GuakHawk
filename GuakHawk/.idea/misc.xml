@@ -5,9 +5,12 @@
       <map>
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/activity_display_username.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/allsetr.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/fragment_create_group.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/fragment_create_group_options.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/fragment_home.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/pref_def.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/layout/rigazzis.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/GuakHawk/app/src/main/res/menu/bottom_nav_menu.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/chris/courses/csci5115/GuakHawk/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
         <entry key="app/src/main/res/drawable/login_bg.xml" value="0.129" />

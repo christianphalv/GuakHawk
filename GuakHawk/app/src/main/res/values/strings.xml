@@ -4,6 +4,7 @@
     <string name="title_create_group">Create Group</string>
     <string name="title_create_group_options">Create Group Options</string>
     <string name="title_notifications">Notifications</string>
+    <string name="back">Back</string>
 
     <string-array name="create_group_friends_search_array">
         <item>Anushka Angamuthu</item>

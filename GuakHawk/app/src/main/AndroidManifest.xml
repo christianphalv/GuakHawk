@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuakHawk">
         <activity
+            android:name=".foodprefandpick.nextButton"
+            android:exported="false" />
+        <activity
+            android:name=".foodprefandpick.goButton1"
+            android:exported="false" />
+        <activity
+            android:name=".foodprefandpick.goButton2"
+            android:exported="false" />
+        <activity
+            android:name=".foodprefandpick.skipButton"
+            android:exported="false" />
+        <activity
+            android:name=".foodprefandpick.PrefAndPick"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

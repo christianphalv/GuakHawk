@@ -1,4 +1,4 @@
-package com.example.guakhawk.foodprefandpick;
+package com.example.foodprefandpick;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.guakhawk.R;
 
 public class goButton1 extends AppCompatActivity {
     private Button okBtnM;
@@ -24,7 +22,7 @@ public class goButton1 extends AppCompatActivity {
         });
     }
     public void openOkMButton(){
-        Intent intent = new Intent(this, PrefAndPick.class);
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 }

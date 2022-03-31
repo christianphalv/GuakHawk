@@ -1,4 +1,4 @@
-package com.example.guakhawk.foodprefandpick;
+package com.example.foodprefandpick;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,15 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.guakhawk.R;
-
-public class PrefAndPick extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private Button goBtn;
     private Button skipBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pref_def);
+        setContentView(R.layout.activity_main);
         goBtn = (Button) findViewById(R.id.goBtn);
         skipBtn = (Button) findViewById(R.id.skipBtn);
         goBtn.setOnClickListener(new View.OnClickListener(){
