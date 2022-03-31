@@ -12,14 +12,29 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.guakhawk.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_create_group"
+        android:name="com.example.guakhawk.ui.createGroup.CreateGroupFragment"
+        android:label="@string/title_create_group"
+        tools:layout="@layout/fragment_create_group" >
+        <action
+            android:id="@+id/action_navigation_create_group_to_navigation_create_group_options"
+            app:destination="@id/navigation_create_group_options"
+            app:popUpTo="@id/navigation_create_group"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.guakhawk.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_create_group_options"
+        android:name="com.example.guakhawk.ui.createGroupOptions.CreateGroupOptionsFragment"
+        android:label="@string/title_create_group_options"
+        tools:layout="@layout/fragment_create_group_options" >
+        <action
+            android:id="@+id/action_navigation_create_group_options_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>
