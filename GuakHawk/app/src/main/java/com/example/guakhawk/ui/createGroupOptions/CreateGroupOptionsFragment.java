@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -31,9 +32,6 @@ public class CreateGroupOptionsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_create_group_options, container, false);
 
-        TextView textView = view.findViewById(R.id.text_create_group_options);
-        textView.setText("This is a create group options fragment");
-
         sendInvitesButton = view.findViewById(R.id.create_group_options_send_button);
         sendInvitesButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +51,9 @@ public class CreateGroupOptionsFragment extends Fragment {
                 R.array.create_group_options_events_array, android.R.layout.simple_spinner_item);
         eventsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         eventsSpinner.setAdapter(eventsAdapter);
+
+        DatePicker datePicker = (DatePicker) view.findViewById(R.id.create_group_options_date_picker);
+        datePicker.setCalendarViewShown(false);
 
 
         return view;
