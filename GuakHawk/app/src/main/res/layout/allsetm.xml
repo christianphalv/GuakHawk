@@ -114,8 +114,8 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="329dp"
-        android:layout_height="174dp"
+        android:layout_width="330dp"
+        android:layout_height="101dp"
         android:background="#FFFFFF"
         android:text="You're all set for dinner at 7:30pm at Mama Lucia's! "
         android:textAlignment="center"
