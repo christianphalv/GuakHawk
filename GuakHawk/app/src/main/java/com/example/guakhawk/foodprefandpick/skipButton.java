@@ -19,7 +19,7 @@ public class skipButton extends AppCompatActivity {
         setContentView(R.layout.rigazzis);
         goBtn = (Button) findViewById(R.id.goBtnR);
         nextBtn = (Button) findViewById(R.id.nextBtnR);
-        backBtn = (Button) findViewById(R.id.goBtnR);
+        backBtn = (Button) findViewById(R.id.backBtnR);
         goBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

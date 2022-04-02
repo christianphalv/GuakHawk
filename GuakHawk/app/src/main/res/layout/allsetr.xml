@@ -114,8 +114,8 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="329dp"
-        android:layout_height="174dp"
+        android:layout_width="327dp"
+        android:layout_height="103dp"
         android:background="#FFFFFF"
         android:text="You're all set for dinner at 7:30pm at Rigazzi's! "
         android:textAlignment="center"
