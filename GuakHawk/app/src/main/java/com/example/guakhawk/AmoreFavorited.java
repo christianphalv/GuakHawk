@@ -1,4 +1,4 @@
-package com.example.favorites;
+package com.example.guakhawk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,4 +11,6 @@ public class AmoreFavorited extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorites_amore);
     }
+
+    // add button to go back to account
 }
