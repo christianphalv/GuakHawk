@@ -23,13 +23,13 @@ public class Preferences extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder savedAlert = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder savedAlert = new AlertDialog.Builder(Preferences.this);
                 savedAlert.setTitle("Your Preferences Have Been Saved!");
                 savedAlert.setMessage("You can now create a new group dining event.\nSetting your dining preferences helps Guac Hawk match you with the best suited restraunts for you!");
                 savedAlert.setPositiveButton("Close", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(MainActivity.this, "Yes clicked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Preferences.this, "Yes clicked", Toast.LENGTH_SHORT).show();
                     }
                 });
                 savedAlert.show();

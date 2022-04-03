@@ -23,12 +23,12 @@ public class Favorites extends AppCompatActivity {
         plusButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder favoriteAlert = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder favoriteAlert = new AlertDialog.Builder(Favorites.this);
                 favoriteAlert.setTitle("Amore Added to Favorites!");
                 favoriteAlert.setPositiveButton("Done", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent amore_favorited = new Intent (MainActivity.this, AmoreFavorited.class);
+                        Intent amore_favorited = new Intent (Favorites.this, AmoreFavorited.class);
                         startActivity(amore_favorited);
                     }
                 });
