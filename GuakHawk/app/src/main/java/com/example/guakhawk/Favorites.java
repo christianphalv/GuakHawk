@@ -17,7 +17,7 @@ public class Favorites extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.favorites_list);
 
         plusButton = (ImageButton) findViewById(R.id.add_amore);
         plusButton.setOnClickListener(new View.OnClickListener(){
