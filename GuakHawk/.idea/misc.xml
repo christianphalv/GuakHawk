@@ -21,6 +21,10 @@
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.10648148148148148" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.10648148148148148" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/favorites_amore.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/favorites_list.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/preferences.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/view_dining_preferences.xml" value="0.165" />
       </map>
     </option>
   </component>
