@@ -30,6 +30,21 @@
         <item>Celebration</item>
         <item>Birthday</item>
     </string-array>
+    
+    <string name="friends">Friends</string>
+    <string name="friends_home_search">Search</string>
+    <string name="friends_home_friend1">Conor Hogan</string>
+    <string name="friends_home_friend2">Christian Halvorson</string>
+    <string name="friends_home_friend3">Maryam Masood</string>
+    <string name="friends_home_friend4">Calvin Hoffmann</string>
+    <string name="friends_home_friend5">Anushka Angamuthu</string>
+    <string name="friends_home_friend6">Jonathan Amos</string>
+
+    <string name="friend_requests">Friend Requests</string>
+    <string name="friends_request_1">Carl Strutivant</string>
+    <string name="friends_request_2">Chris J. Dovolis</string>
+
+    <string name="friend_searched_1">Georgie Qiao Jin</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
