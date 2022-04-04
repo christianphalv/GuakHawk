@@ -33,13 +33,14 @@
         android:id="@+id/imgButton_account"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginEnd="4dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@+id/imageView23"
         app:layout_constraintEnd_toEndOf="@+id/imageView23"
         app:layout_constraintTop_toTopOf="@+id/imageView23"
-        app:srcCompat="@drawable/Raster" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
         android:id="@+id/text_my_calendar"
@@ -58,16 +59,18 @@
         android:layout_height="68dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="#FFFFFF"
         android:text="McDonald's with Calvin and Chrisitan"
         android:textAllCaps="false"
         android:textColor="#000000"
-        app:icon="@drawable/utensils"
+        app:icon="@drawable/ic_formality_foreground"
+        app:iconSize="50dp"
         app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="549dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CalendarView
         android:id="@+id/calendarView"
