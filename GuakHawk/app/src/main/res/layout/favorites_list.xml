@@ -30,7 +30,6 @@
         android:backgroundTint="#49D989"
         android:text="Back to account ->"
         android:textColor="#47525E"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,7 +110,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <TextView
         android:id="@+id/textView9"
@@ -132,12 +131,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="285dp"
         android:text="Biaggio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -157,8 +156,6 @@
         android:layout_height="0dp"
         android:layout_marginTop="348dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="262dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_clock_foreground" />
@@ -167,55 +164,54 @@
         android:id="@+id/imageView5"
         android:layout_width="54dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="269dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.666"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="473dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_clock_foreground" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="54dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="348dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="332dp"
+        android:layout_marginBottom="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_clock_foreground" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="51dp"
-        android:layout_height="0dp"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="353dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
         app:srcCompat="@drawable/ic_clock_foreground" />
 
     <ImageButton
         android:id="@+id/add_amore"
         android:layout_width="53dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="308dp"
         android:backgroundTint="#FBFAFA"
         android:contentDescription="add_amore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/back_to_account"
-        app:layout_constraintVertical_bias="0.947"
+        app:layout_constraintVertical_bias="0.814"
         app:srcCompat="@drawable/ic_add_foreground" />
+
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="79dp"
         android:layout_height="87dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:srcCompat="@drawable/ic_add_foreground" />
@@ -225,38 +221,62 @@
         android:layout_width="79dp"
         android:layout_height="76dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="236dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:srcCompat="@drawable/ic_add_foreground" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+    <ImageView
+        android:id="@+id/imageView16"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
-        android:background="#49d989"
-        android:backgroundTint="#49D989"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="724dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_home_foreground" />
+    <ImageButton
+        android:id="@+id/button_home_page"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toStartOf="@+id/button_new_group"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-            app:srcCompat="@drawable/ic_add_foreground" />
+    <ImageButton
+        android:id="@+id/button_friends_page"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/friends_tab"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/button_new_group"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <ImageButton
+        android:id="@+id/button_new_group"
+        android:layout_width="84dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:tint="#000000" />
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -266,7 +286,6 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
