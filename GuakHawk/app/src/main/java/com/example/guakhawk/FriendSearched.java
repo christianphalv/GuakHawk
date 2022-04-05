@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import com.example.guakhawk.ui.createGroup.CreateGroupFragment;
 
@@ -18,10 +19,14 @@ public class FriendSearched extends AppCompatActivity {
     ImageButton to_home;
     ImageButton to_create_group;
 
+    SearchView searchView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friend_searched);
+
+        searchView = (SearchView) findViewById(R.id.friendsHomeSearch);
 
         requestFriendButton = (ImageButton) findViewById(R.id.addFriend1);
         requestFriendButton.setOnClickListener(new View.OnClickListener(){
