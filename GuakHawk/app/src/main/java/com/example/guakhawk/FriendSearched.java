@@ -14,7 +14,7 @@ public class FriendSearched extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friends_home);
+        setContentView(R.layout.friend_searched);
 
         requestFriendButton = (ImageButton) findViewById(R.id.addFriend1);
         requestFriendButton.setOnClickListener(new View.OnClickListener(){

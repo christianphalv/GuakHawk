@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.guakhawk.HomePage;
 import com.example.guakhawk.R;
 
 public class goButton1 extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class goButton1 extends AppCompatActivity {
         });
     }
     public void openOkMButton(){
-        Intent intent = new Intent(this, PrefAndPick.class);
+        Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
 }

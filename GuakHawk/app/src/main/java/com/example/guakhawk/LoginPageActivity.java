@@ -33,7 +33,7 @@ public class LoginPageActivity extends AppCompatActivity {
     }
 
     public void sendUsername(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomePage.class);
         EditText editText = (EditText) findViewById(R.id.username);
         String username = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, username);

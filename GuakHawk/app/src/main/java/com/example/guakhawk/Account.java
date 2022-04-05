@@ -12,6 +12,8 @@ public class Account extends AppCompatActivity {
 
     ImageButton button_back;
     ImageButton account_settings;
+    Button button_favorites;
+    Button button_dining_preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class Account extends AppCompatActivity {
 
         button_back = findViewById(R.id.button_back);
         account_settings = findViewById(R.id.button_account_settings);
+        button_favorites = findViewById(R.id.button_favorite_restaurants);
+        button_dining_preferences = findViewById(R.id.button_dining_preferences);
         button_back.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -34,6 +38,26 @@ public class Account extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(Account.this, AccountSettings.class);
+                        startActivity(i);
+                    }
+                }
+        );
+
+        button_favorites.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent i = new Intent(Account.this, Favorites.class);
+                        startActivity(i);
+                    }
+                }
+        );
+
+        button_dining_preferences.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent i = new Intent(Account.this, Preferences.class);
                         startActivity(i);
                     }
                 }

@@ -8,8 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.Toast;
+
 
 public class Preferences extends AppCompatActivity {
 
@@ -29,7 +28,8 @@ public class Preferences extends AppCompatActivity {
                 savedAlert.setPositiveButton("Close", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(Preferences.this, "Yes clicked", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(Preferences.this, ViewPreferences.class);
+                        startActivity(i);
                     }
                 });
                 savedAlert.show();

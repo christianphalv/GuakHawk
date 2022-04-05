@@ -8,9 +8,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GuakHawk">
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".Friends"
+            android:exported="false" />
+        <activity android:name=".FriendRequests"
+            android:exported="false" />
+        <activity android:name=".FriendSearched"
+            android:exported="false" />
+        <activity android:name=".Favorites"
+            android:exported="false" />
+        <activity android:name=".AmoreFavorited"
+            android:exported="false" />
+        <activity android:name=".Preferences"
+            android:exported="false" />
+        <activity android:name=".ViewPreferences"
+            android:exported="false" />
         <activity
             android:name=".UpcomingEvents"
+            android:exported="false" />
+        <activity android:name=".ui.createGroup.CreateGroupFragment"
+            android:exported="false" />
+        <activity android:name=".ui.createGroupOptions.CreateGroupOptionsFragment"
             android:exported="false" />
         <activity
             android:name=".NotificationSettings"

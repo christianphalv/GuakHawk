@@ -1,8 +1,10 @@
 package com.example.guakhawk.ui.createGroup;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 //import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -16,13 +18,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.SearchView;
 
+import com.example.guakhawk.Account;
+import com.example.guakhawk.HomePage;
 import com.example.guakhawk.R;
+import com.example.guakhawk.ui.createGroupOptions.CreateGroupOptionsFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class CreateGroupFragment extends Fragment {
+public class CreateGroupFragment extends AppCompatActivity {
 
     Button gotoCreateGroupOptionsButton;
 
@@ -30,24 +35,21 @@ public class CreateGroupFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
+        setContentView(R.layout.fragment_create_group);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_create_group, container, false);
-
-        gotoCreateGroupOptionsButton = view.findViewById(R.id.create_group_next_botton);
+        gotoCreateGroupOptionsButton = findViewById(R.id.create_group_next_botton);
         gotoCreateGroupOptionsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_navigation_create_group_to_navigation_create_group_options);
+                Intent i = new Intent(CreateGroupFragment.this, CreateGroupOptionsFragment.class);
+                startActivity(i);
+
             }
         });
 
         List<String> inviteesList = new ArrayList<>();
-        ArrayAdapter<String> inviteesAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, inviteesList);
-        ListView inviteesListView = view.findViewById(R.id.create_group_invitees_list);
+        ArrayAdapter<String> inviteesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, inviteesList);
+        ListView inviteesListView = findViewById(R.id.create_group_invitees_list);
 
 
 
@@ -58,12 +60,12 @@ public class CreateGroupFragment extends Fragment {
         friendsList.add("Conor Hogan");
         friendsList.add("Jonathan Amos");
         friendsList.add("Maryam Masood");
-        ArrayAdapter<String> friendsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, friendsList);
-        SearchView friendsSearch = view.findViewById(R.id.create_group_friends_search);
-        ListView friendsListView = view.findViewById(R.id.create_group_friends_list);
+        ArrayAdapter<String> friendsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, friendsList);
+        SearchView friendsSearch = findViewById(R.id.create_group_friends_search);
+        ListView friendsListView = findViewById(R.id.create_group_friends_list);
 
         List<String> emptyList = new ArrayList<>();
-        ArrayAdapter<String> emptyAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, emptyList);
+        ArrayAdapter<String> emptyAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, emptyList);
 
         inviteesListView.setAdapter(inviteesAdapter);
         friendsListView.setAdapter(emptyAdapter);
@@ -108,10 +110,5 @@ public class CreateGroupFragment extends Fragment {
                 return false;
             }
         });
-
-
-
-
-        return view;
     }
 }

@@ -28,11 +28,11 @@
         android:id="@+id/imageView6"
         android:layout_width="0dp"
         android:layout_height="68dp"
-        android:layout_marginTop="664dp"
+        android:layout_marginTop="724dp"
         android:scaleType="fitXY"
         android:src="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,7 +65,7 @@
         android:id="@+id/text_upcoming_events"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="24dp"
         android:text="Upcoming Events: 1"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
@@ -102,7 +102,7 @@
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         android:src="@drawable/ic_home_black_24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toStartOf="@+id/button_new_group"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -114,7 +114,7 @@
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         android:src="@drawable/friends_tab"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/button_new_group"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -126,9 +126,10 @@
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         android:src="@android:drawable/ic_menu_add"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
         app:tint="#000000" />
 
     <LinearLayout
@@ -173,7 +174,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/pending_requests_button"
         android:layout_width="0dp"
         android:layout_height="68dp"
         android:layout_marginStart="12dp"
@@ -217,13 +218,13 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Most  popular cuisine: Italian"
+        android:text="Most popular cuisine: Italian"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
         app:icon="@drawable/utensils"
         app:iconTint="#49D989"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/pending_requests_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
