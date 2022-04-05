@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="34dp"
-        android:backgroundTint="#F4EEEE"
-        android:text="edit"
+        android:backgroundTint="#49D989"
+        android:text="Back to account ->"
         android:textColor="#47525E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
