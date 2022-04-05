@@ -36,7 +36,7 @@
         android:id="@+id/imageView16"
         android:layout_width="0dp"
         android:layout_height="68dp"
-        android:layout_marginTop="664dp"
+        android:layout_marginTop="724dp"
         android:scaleType="fitXY"
         android:src="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +104,7 @@
         android:layout_width="91dp"
         android:layout_height="89dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="320dp"
+        android:layout_marginEnd="296dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_group_foreground" />
@@ -113,8 +113,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="208dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="164dp"
         android:text="Ideal Group Size: 4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -124,7 +124,7 @@
         android:layout_width="91dp"
         android:layout_height="104dp"
         android:layout_marginTop="156dp"
-        android:layout_marginEnd="320dp"
+        android:layout_marginEnd="300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_heart_foreground" />
@@ -134,7 +134,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="192dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="72dp"
         android:text="Favorite Restaurant: Mama Lucia's"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -144,7 +144,7 @@
         android:layout_width="88dp"
         android:layout_height="80dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="249dp"
+        android:layout_marginTop="248dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_cuisine_foreground" />
@@ -154,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="284dp"
-        android:layout_marginEnd="184dp"
+        android:layout_marginEnd="140dp"
         android:text="Favorite Cuisine: Italian"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -197,8 +197,8 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="464dp"
-        android:layout_marginEnd="204dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="180dp"
         android:text="Formality: Casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -218,7 +218,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="520dp"
-        android:layout_marginEnd="165dp"
+        android:layout_marginEnd="140dp"
         android:text="Preferred Dining Times"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
