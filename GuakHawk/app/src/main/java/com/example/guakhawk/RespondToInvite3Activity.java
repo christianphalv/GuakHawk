@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
+import com.example.guakhawk.foodprefandpick.PrefAndPick;
+
 public class RespondToInvite3Activity extends AppCompatActivity {
 
     Button KFCBtn;
@@ -34,7 +36,7 @@ public class RespondToInvite3Activity extends AppCompatActivity {
     }
 
     public void openNextPage(){
-        Intent intent = new Intent(this, HomePage.class);
+        Intent intent = new Intent(this, PrefAndPick.class);
         startActivity(intent);
     }
 }

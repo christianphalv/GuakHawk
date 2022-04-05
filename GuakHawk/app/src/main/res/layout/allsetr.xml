@@ -113,9 +113,9 @@
         app:layout_constraintVertical_bias="0.711" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="327dp"
-        android:layout_height="103dp"
+        android:id="@+id/textView25"
+        android:layout_width="336dp"
+        android:layout_height="71dp"
         android:background="#FFFFFF"
         android:text="You're all set for dinner at 7:30pm at Rigazzi's! "
         android:textAlignment="center"
