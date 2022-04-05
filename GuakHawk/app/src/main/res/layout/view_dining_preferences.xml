@@ -36,11 +36,7 @@
         android:id="@+id/imageView16"
         android:layout_width="0dp"
         android:layout_height="68dp"
-<<<<<<< HEAD
         android:layout_marginTop="724dp"
-=======
-        android:layout_marginTop="664dp"
->>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         android:scaleType="fitXY"
         android:src="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
