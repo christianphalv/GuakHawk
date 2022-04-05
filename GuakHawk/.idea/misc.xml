@@ -45,8 +45,14 @@
         <entry key="app/src/main/res/drawable/login_bg.xml" value="0.129" />
         <entry key="app/src/main/res/layout/activity_display_username.xml" value="0.10648148148148148" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/activity_invite_declined.xml" value="0.13425925925925927" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/activity_respond_to_invite.xml" value="0.13425925925925927" />
+        <entry key="app/src/main/res/layout/activity_respond_to_invite1.xml" value="0.13425925925925927" />
+        <entry key="app/src/main/res/layout/activity_respond_to_invite2.xml" value="0.13425925925925927" />
+        <entry key="app/src/main/res/layout/activity_respond_to_invite3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.10648148148148148" />
+        <entry key="app/src/main/res/layout/content_respond_to_invite3.xml" value="0.2501302761855133" />
       </map>
     </option>
   </component>

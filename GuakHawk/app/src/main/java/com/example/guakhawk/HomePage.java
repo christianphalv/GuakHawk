@@ -85,7 +85,7 @@ public class HomePage extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        Intent i = new Intent(HomePage.this, PrefAndPick.class);
+                        Intent i = new Intent(HomePage.this, RespondToInviteActivity.class);
                         startActivity(i);
                     }
                 }

@@ -9,26 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Friends"
+        <activity
+            android:name=".Friends"
             android:exported="false" />
-        <activity android:name=".FriendRequests"
+        <activity
+            android:name=".FriendRequests"
             android:exported="false" />
-        <activity android:name=".FriendSearched"
+        <activity
+            android:name=".FriendSearched"
             android:exported="false" />
-        <activity android:name=".Favorites"
+        <activity
+            android:name=".Favorites"
             android:exported="false" />
-        <activity android:name=".AmoreFavorited"
+        <activity
+            android:name=".AmoreFavorited"
             android:exported="false" />
-        <activity android:name=".Preferences"
+        <activity
+            android:name=".Preferences"
             android:exported="false" />
-        <activity android:name=".ViewPreferences"
+        <activity
+            android:name=".ViewPreferences"
             android:exported="false" />
         <activity
             android:name=".UpcomingEvents"
             android:exported="false" />
-        <activity android:name=".ui.createGroup.CreateGroupFragment"
+        <activity
+            android:name=".ui.createGroup.CreateGroupFragment"
             android:exported="false" />
-        <activity android:name=".ui.createGroupOptions.CreateGroupOptionsFragment"
+        <activity
+            android:name=".ui.createGroupOptions.CreateGroupOptionsFragment"
             android:exported="false" />
         <activity
             android:name=".NotificationSettings"
@@ -85,6 +94,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginPageActivity" />
+        </activity>
+        <activity
+            android:name=".RespondToInvite3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RespondToInvite2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RespondToInvite1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".InviteDeclinedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RespondToInviteActivity"
+            android:exported="true">
         </activity>
     </application>
 
