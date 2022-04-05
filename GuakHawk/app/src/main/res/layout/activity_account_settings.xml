@@ -84,29 +84,34 @@
         android:id="@+id/account_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Account Info"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_notification_settings" />
 
     <TextView
         android:id="@+id/text_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
         android:text="Username"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintTop_toBottomOf="@+id/account_info" />
 
     <TextView
         android:id="@+id/text_username_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="LanaIsCoolrThanU"
         app:layout_constraintBottom_toBottomOf="@+id/text_username"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_username" />
+        app:layout_constraintStart_toEndOf="@+id/text_username"
+        app:layout_constraintTop_toBottomOf="@+id/account_info" />
 
     <TextView
         android:id="@+id/text_email"
@@ -122,9 +127,11 @@
         android:id="@+id/text_email_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="lana@umn.edu"
         app:layout_constraintBottom_toBottomOf="@+id/text_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_username_string" />
+        app:layout_constraintStart_toStartOf="@+id/text_username_string"
+        app:layout_constraintTop_toBottomOf="@+id/text_username_string" />
 </androidx.constraintlayout.widget.ConstraintLayout>
