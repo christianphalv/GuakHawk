@@ -165,10 +165,14 @@
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:layout_marginStart="4dp"
+<<<<<<< HEAD
         android:layout_marginTop="440dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintHorizontal_bias="0.0"
+=======
+        android:layout_marginTop="473dp"
+>>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_clock_foreground" />
@@ -178,7 +182,11 @@
         android:layout_width="54dp"
         android:layout_height="67dp"
         android:layout_marginEnd="332dp"
+<<<<<<< HEAD
         android:layout_marginBottom="212dp"
+=======
+        android:layout_marginBottom="248dp"
+>>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_clock_foreground" />
@@ -187,7 +195,11 @@
         android:id="@+id/imageView7"
         android:layout_width="49dp"
         android:layout_height="49dp"
+<<<<<<< HEAD
         android:layout_marginStart="4dp"
+=======
+        android:layout_marginStart="8dp"
+>>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         android:layout_marginTop="353dp"
         android:layout_marginEnd="11dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
@@ -195,7 +207,11 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.611"
+=======
+        app:layout_constraintVertical_bias="0.816"
+>>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         app:srcCompat="@drawable/ic_clock_foreground" />
 
     <ImageButton
@@ -257,6 +273,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button_new_group"
         app:layout_constraintStart_toStartOf="@+id/imageView16"
         app:layout_constraintTop_toTopOf="@+id/imageView16" />
+<<<<<<< HEAD
 
     <ImageButton
         android:id="@+id/button_friends_page"
@@ -271,6 +288,22 @@
         app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
     <ImageButton
+=======
+
+    <ImageButton
+        android:id="@+id/button_friends_page"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/friends_tab"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/button_new_group"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <ImageButton
+>>>>>>> f6ce990669a4ab064b35e4491c2600d17ce5609b
         android:id="@+id/button_new_group"
         android:layout_width="84dp"
         android:layout_height="74dp"
