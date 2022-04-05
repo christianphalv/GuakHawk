@@ -14,11 +14,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.SearchView;
 
 import com.example.guakhawk.Account;
+import com.example.guakhawk.Friends;
 import com.example.guakhawk.HomePage;
 import com.example.guakhawk.R;
 import com.example.guakhawk.ui.createGroupOptions.CreateGroupOptionsFragment;
@@ -30,6 +32,9 @@ import java.util.List;
 public class CreateGroupFragment extends AppCompatActivity {
 
     Button gotoCreateGroupOptionsButton;
+    ImageButton gotoHome;
+    ImageButton gotoCreateGroup;
+    ImageButton gotoFriends;
 
 
     @Override
@@ -37,13 +42,40 @@ public class CreateGroupFragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_create_group);
 
+        gotoHome = findViewById(R.id.create_group_button_home_page);
+        gotoCreateGroup = findViewById(R.id.create_group_button_new_group);
+        gotoFriends = findViewById(R.id.create_group_button_friends_page);
+
+        gotoHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CreateGroupFragment.this, HomePage.class);
+                startActivity(i);
+            }
+        });
+
+        gotoCreateGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CreateGroupFragment.this, CreateGroupFragment.class);
+                startActivity(i);
+            }
+        });
+
+        gotoFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CreateGroupFragment.this, Friends.class);
+                startActivity(i);
+            }
+        });
+
         gotoCreateGroupOptionsButton = findViewById(R.id.create_group_next_botton);
         gotoCreateGroupOptionsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(CreateGroupFragment.this, CreateGroupOptionsFragment.class);
                 startActivity(i);
-
             }
         });
 
@@ -67,8 +99,10 @@ public class CreateGroupFragment extends AppCompatActivity {
         List<String> emptyList = new ArrayList<>();
         ArrayAdapter<String> emptyAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, emptyList);
 
-        inviteesListView.setAdapter(inviteesAdapter);
-        friendsListView.setAdapter(emptyAdapter);
+        inviteesListView.setAdapter(emptyAdapter);
+        friendsListView.setAdapter(friendsAdapter);
+
+        friendsSearch.setIconified(false);
 
         friendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

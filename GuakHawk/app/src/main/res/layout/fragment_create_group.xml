@@ -20,9 +20,21 @@
     <ListView
         android:id="@+id/create_group_invitees_list"
         android:layout_width="411dp"
-        android:layout_height="441dp"
-        android:layout_marginStart="1dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
+        android:text="Search Friends"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:backgroundTint="#EFF2F7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,8 +42,10 @@
         android:id="@+id/create_group_friends_search"
         android:layout_width="410dp"
         android:layout_height="60dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:showAsAction="always"
+        app:layout_constraintBottom_toTopOf="@+id/create_group_friends_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +56,77 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/create_group_friends_search" />
+
+    <ImageView
+        android:id="@+id/create_group_banner"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Create Group"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:backgroundTint="#EFF2F7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <ImageView
+        android:id="@+id/create_group_nav_bar"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/create_group_button_home_page"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_group_nav_bar"
+        app:layout_constraintStart_toStartOf="@+id/create_group_nav_bar" />
+
+    <ImageButton
+        android:id="@+id/create_group_button_new_group"
+        android:layout_width="84dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="@+id/create_group_nav_bar"
+        app:layout_constraintStart_toStartOf="@+id/create_group_nav_bar"
+        app:tint="#000000" />
+
+    <ImageButton
+        android:id="@+id/create_group_button_friends_page"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="292dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/friends_tab"
+        app:layout_constraintBottom_toBottomOf="@+id/create_group_nav_bar"
+        app:layout_constraintStart_toStartOf="@+id/create_group_nav_bar"
+        app:tint="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
